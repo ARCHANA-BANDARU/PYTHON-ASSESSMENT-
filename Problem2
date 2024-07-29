@@ -1,0 +1,15 @@
+#no.of combinations leading to product
+n=7
+arr=[5,3,20,10,1,4,2]
+m=60
+count=0
+for i in range(n):
+    for j in range(i+1,n):
+       for k in range(j+1,n):
+         if arr[i]*arr[j]*arr[k]==m:
+         count+=1
+print(count)                
+                
+             
+                
+    
