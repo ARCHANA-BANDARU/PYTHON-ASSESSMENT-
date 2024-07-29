@@ -1,0 +1,3 @@
+#space counter
+n=int(input())
+print(n.count(" "))
