@@ -1,0 +1,15 @@
+#representing the smallest prime #number larger than N.def isprime(num):
+    if num in (0,1):
+        return False
+    else:
+        for i in range(2,n+1):
+            if num%i==0:
+                return False
+        return True
+n=int(input())
+nextnum=n+1 
+while True:        
+    if isprime(nextnum):
+        print(nextnum)
+        break
+    nextnum+=1
