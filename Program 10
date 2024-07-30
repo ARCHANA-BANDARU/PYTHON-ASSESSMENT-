@@ -1,0 +1,14 @@
+# diwali concert 
+n=int(input())
+p=int(input())
+rem_time=240-p
+cnt=0
+for i in range(1,n+1):
+ sol_time=i*5
+ if sol_time < rem_time and rem_time>0:
+    cnt+=1
+    rem_time-=sol_time
+ else:
+    break
+print(cnt)
+     
