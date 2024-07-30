@@ -1,0 +1,10 @@
+# ant on rail
+n=int(input())
+arr=list(map(int,input().split()))
+cnt=0
+total=0
+for i in arr:
+    total+=i
+    if total==0:
+        cnt+=1
+print(cnt)
