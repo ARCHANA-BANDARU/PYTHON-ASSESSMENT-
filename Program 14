@@ -1,0 +1,16 @@
+#equilibrium 
+n=5
+arr=[2,4,7,3,3]
+ans=0
+value=False
+for i in range(n):
+    left=sum(arr[:i])
+    right=sum(arr[i+1:])
+    if left==right:
+     value=True
+     ans=i+1
+     break
+if value== False:
+   print("NOT FOUND")     
+else:
+ print(ans)    
