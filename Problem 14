@@ -1,0 +1,11 @@
+#encode the code (square) 
+#input=167
+#output=13649
+n=int(input())
+ans=""
+while n>0:
+ cur_no=n%10
+ ans=str(cur_no**2)+ans
+ n=n//10
+print(ans)
+  
