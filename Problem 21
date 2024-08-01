@@ -1,0 +1,18 @@
+#robo car
+arr=list(map(int,input().split()))
+total_dist=0
+sum=0
+for i in arr:
+    sum+=i
+    if total_dist<abs(sum):
+        total_dist=abs(sum)
+print(total_dist)
+#another 
+arr=[1,-2,3,4]
+total_dist=0
+sum=0
+for i in arr:
+    sum+=i
+    if total_dist<sum:
+        total_dist=sum
+print(sum)
