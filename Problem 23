@@ -1,0 +1,15 @@
+#minimum grade 
+s="abcdefg"
+p=3
+k=2
+l=[]
+l.append(s[p-1])
+j=1
+for i in range(k):
+    if p-1-j>0:
+        l.append(s[p-1])
+    if p-1-j<len(s):
+        l.append(s[p-1-j])
+    j+=1
+l.sort()
+print(l[0])        
