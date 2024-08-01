@@ -1,0 +1,5 @@
+#reverse a string
+#input:hello world
+#output:world hello
+s=input().split(" ")
+print(*s[::-1])
