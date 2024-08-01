@@ -1,0 +1,14 @@
+#string change
+s="abcd"
+k="xyz"
+total=0
+for i in s:
+    if i not in k:
+        dist=9999
+        for j in k:
+          distance=abs(ord(j))-(ord(i)
+          if distance<dist:
+             dist=distance
+        total+=dist
+print(total)        
+     
