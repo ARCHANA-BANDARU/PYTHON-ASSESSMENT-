@@ -1,0 +1,11 @@
+#missing alphabets 
+s=set(input())
+alp=set("abcdefghijklmnopqrstuvwxyz")
+diff=sorted(alp.difference(s))
+print(''.join(diff))
+#one more logic
+n=input()
+arr="abcdefghijklmnopqrstuvwxyz"
+for i in arr:
+    if i not in n:
+        print(i,end="")
