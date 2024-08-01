@@ -1,0 +1,12 @@
+#candy distribution 
+#K=no.of candies
+#N=no.of children
+#A=from which index the distribution starts 
+#input=5 2 1
+#output=2
+N,K,A=list(map(int,input().split(" ")))
+ans=(A+K-1)%N
+if ans==0:
+    print(N)
+else:
+    print(ans)
