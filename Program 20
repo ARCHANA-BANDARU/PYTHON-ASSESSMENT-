@@ -1,0 +1,10 @@
+#subarray with max sum
+n=int(input())
+arr=list(map(int,input().split()))
+ans=arr[0]
+arr_max=arr[0]
+for i in arr[1:]:
+   arr_max=max(arr_max+i,i)
+   if arr_max>ans:
+       ans=arr_max
+print(ans)
