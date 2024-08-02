@@ -1,0 +1,17 @@
+#score
+#for every head=2 points
+#for ever tail=-1 points
+#for every 3 consecutive heads game will end
+s=input()
+score=0
+heads=0
+for char in s:
+    if char=='H':
+        score+=2
+        heads+=1
+        if heads==3:
+          break
+    else:
+        score-=1
+        heads=0
+print(score)        
