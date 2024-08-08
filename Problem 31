@@ -1,0 +1,7 @@
+n=4
+f=[1,1]
+for N in range(2,n+1):
+   num=(f[N-1]*f[N-1]+f[N-2]*f[N-2])%47
+   f.append(num)
+print(f[-1])
+        
