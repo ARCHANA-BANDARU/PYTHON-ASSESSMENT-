@@ -1,0 +1,9 @@
+#fellis function 
+#f(N)=f(N-1)+7*f(N-2)+(N/4) modulo 109+7
+n=int(input())
+f=[1,1]
+for N in range(2,n+1):
+   num=int(f[N-1]+7*f[N-2]+(N/4))%(10**9+7)
+   f.append(num)
+print(f[-1])
+        
