@@ -1,0 +1,15 @@
+#least corner
+seat="3C"
+s=input().split("-")
+element=None
+for row in s:
+    if seat in row:
+        element=row
+        break
+element=element.split()
+left=element.index(seat)
+right=(len(element)-1)-element.index(seat)
+if right==0:
+    right=99999
+print(min(left,right))
+             
