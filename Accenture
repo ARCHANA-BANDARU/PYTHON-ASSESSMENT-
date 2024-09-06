@@ -1,0 +1,20 @@
+#max pair
+#rules
+#1: i+j=18 and i>j
+i*j =max proudct
+#max product pair will be result
+n=6
+arr=[10,7,11,7,1,28]
+max=0
+pair=[]
+for i in range(n):
+    for j in range(n):
+        if arr[i]+arr[j]==18 and arr[i]>arr[j]:
+            product=arr[i]*arr[j]
+            if product>max:
+                max=product
+                pair=arr[i],arr[j]
+print(pair)
+         
+                
+    
