@@ -1,0 +1,15 @@
+#lastest version of file
+s=list(map(str,input().split()))
+n=int(input())
+if n==0:
+    print(-1)
+else:
+     m=0
+     for i in s:
+       if (int(i[5])>m):
+                m=int(i[5])
+     print(m)
+
+         
+                
+    
