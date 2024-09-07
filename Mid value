@@ -1,0 +1,8 @@
+arr=list(map(int,input().split()))
+list=[]
+for i in arr:
+    if i>0:
+        list.append(i)
+list.sort()        
+mid=(len(list)//2)    
+print(list[mid])
